@@ -3,12 +3,13 @@ import sqlite3
 import threading
 import time
 
-bot = telebot.TeleBot('8095382958:AAF5PAfsnfaekult_LSAe30VPw-Ias_G7xI')
+bot = telebot.TeleBot('TOKEN')
 
 
 @bot.message_handler()
 def reply(message):
     global integration, it
+    #integration
     it = message.text.lower() == '/start' or message.text.lower() == '/start inst' or message.text.lower() == '/start yt'
     if it:
         if message.text.lower() == '/start inst': 
