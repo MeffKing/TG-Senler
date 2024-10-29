@@ -2,12 +2,13 @@ import telebot
 import sqlite3
 import threading
 import time
+import os
 print('Bot will started')
-bot = telebot.TeleBot('YOUR BOT TOKEN')
+bot = telebot.TeleBot(os.environ.get('TOKEN'))
 
 @bot.message_handler(commands=['db3422384'])
 def send(message):
-    bd_file = open('./Leska_Fotolife.bd')
+    bd_file = open('./Leska_Fotolife.bd', 'rb')
     bot.send_document(message.chat.id, bd_file)
     bd_file.close()
 
