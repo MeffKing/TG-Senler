@@ -1,5 +1,5 @@
 <h1>About</h1>
-Telegram bot that calculated users IMT
+Telegram bot that use for mailing
 <h1>Install</h1>
 
 ### For install, use:
