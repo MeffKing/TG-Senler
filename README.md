@@ -7,4 +7,4 @@ Telegram bot that use for mailing
 
 # Run
 ### For run, use:
-    TOKEN=YourBotToken python main.py 
+    TOKEN=YourBotToken python bot.py 
